@@ -327,6 +327,7 @@ def button(x,y,game,action,win):
 
 def menu():
     global Cgame
+    pygame.display.set_caption("Mad Run - Menu")
     music=pygame.mixer.music.load(os.path.join(os.path.dirname(__file__),'Assets','music','menumc.mp3'))
     if mstatus:
         pygame.mixer.music.play(-1)
